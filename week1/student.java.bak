@@ -1,0 +1,32 @@
+class student
+{
+	int rollnumber;
+	String name;
+	String branch;
+	int marks;
+	void getData(int rollnumber,String name,string branch,int marks)
+	{
+		this.rollnumber=rollnumber;
+		this.name=name;
+		this.branch=branch;
+		this.marks=marks;
+	}
+	void display()
+	{
+		System.out.println("rollnumber"+rollnumber);
+        System.out.println("name"+name);
+		System.out.println("branch"+branch);
+		System.out.println("marks"+marks);
+	}
+	public static void main(String args[])
+	{
+		student s1= new student();
+		student s2= new student();
+	
+	s1.getData(1,"harini","cse",100);
+	s2.getData(2,"priya","it",99);
+
+	s1.display();
+	s2.display();
+}
+}
